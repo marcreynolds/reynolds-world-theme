@@ -1,0 +1,18 @@
+title: Reynolds World Theme Demo
+author:
+  name: Mike Reynolds
+  email: mike@example.com
+
+description: >
+  A demonstration site for the Reynolds World theme. This shows sample posts
+  and pages to help you visualize how your content will look with this theme.
+
+theme: reynolds-world-theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, division]
