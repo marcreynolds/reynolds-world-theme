@@ -63,7 +63,7 @@ a {
   display: flex;
   align-items: flex-start;
   gap: $spacing-unit;
-  margin-bottom: $spacing-unit * 1.5;
+  margin-bottom: calc($spacing-unit * 1.5);
 }
 
 .avatar {
@@ -81,7 +81,7 @@ a {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 
   a {
     color: $text-color;
@@ -135,7 +135,7 @@ a {
   display: block;
   font-size: 14px;
   color: $text-tertiary;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -144,7 +144,7 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 
   a {
     color: $text-color;
@@ -179,7 +179,7 @@ a {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 .post-content, .page-content {
@@ -201,15 +201,15 @@ a {
 
   ul, ol {
     margin-bottom: $spacing-unit;
-    padding-left: $spacing-unit * 1.5;
+    padding-left: calc($spacing-unit * 1.5);
   }
 
   li {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
   }
 
   blockquote {
-    margin: $spacing-unit * 1.5 0;
+    margin: calc($spacing-unit * 1.5) 0;
     padding-left: $spacing-unit;
     border-left: 3px solid $border-color;
     color: $text-secondary;
@@ -240,7 +240,7 @@ a {
   img {
     max-width: 100%;
     height: auto;
-    margin: $spacing-unit * 1.5 0;
+    margin: calc($spacing-unit * 1.5) 0;
   }
 
   hr {
