@@ -2,10 +2,14 @@ title: Reynolds World Theme Demo
 author:
   name: Mike Reynolds
   email: mike@example.com
+  avatar: /assets/avatar.png
+  bio: >-
+    A demonstration site for the Reynolds World theme. This shows sample posts
+    and pages to help you visualize your content.
 
 description: >
   A demonstration site for the Reynolds World theme. This shows sample posts
-  and pages to help you visualize how your content will look with this theme.
+  and pages to help you visualize your content.
 
 theme: reynolds-world-theme
 

@@ -80,11 +80,20 @@ a {
   border-bottom: 1px solid $border-color;
 }
 
+.post .site-header {
+  padding-bottom: $spacing-unit * 0.5;
+  margin-bottom: calc($spacing-unit * 0.5);
+}
+
 .profile {
   display: flex;
   align-items: flex-start;
   gap: $spacing-unit;
   margin-bottom: calc($spacing-unit * 1.5);
+}
+
+.post .profile {
+  margin-bottom: calc($spacing-unit * 0.5);
 }
 
 .avatar {

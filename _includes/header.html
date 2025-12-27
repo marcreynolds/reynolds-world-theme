@@ -19,6 +19,7 @@
     </div>
   </div>
 
+  {%- if page.layout != "post" -%}
   <div class="subscribe">
     <a href="{{ '/feed.xml' | relative_url }}"
        class="subscribe-link">
@@ -32,4 +33,5 @@
       </a>
     {%- endif -%}
   </div>
+  {%- endif -%}
 </header>
