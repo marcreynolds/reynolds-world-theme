@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="profile">
+    {%- if site.author.avatar -%}
+      <img src="{{ site.author.avatar | relative_url }}"
+           alt="{{ site.author.name }}"
+           class="avatar">
+    {%- endif -%}
+    <div class="profile-info">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">
+          {{ site.author.name | default: site.title }}
+        </a>
+      </h1>
+      {%- if site.author.bio or site.description -%}
+        <p class="bio">
+          {{ site.author.bio | default: site.description }}
+        </p>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <div class="subscribe">
+    <a href="{{ '/feed.xml' | relative_url }}"
+       class="subscribe-link">
+      Subscribe via RSS
+    </a>
+    {%- if site.author.email -%}
+      <span class="separator">&middot;</span>
+      <a href="mailto:{{ site.author.email }}"
+         class="subscribe-link">
+        Email
+      </a>
+    {%- endif -%}
+  </div>
+</header>
