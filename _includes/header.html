@@ -13,7 +13,7 @@
           {{ site.author.name | default: site.title }}
         </a>
       </h1>
-      {%- if site.author.bio or site.description -%}
+      {%- if page.layout != "post" and (site.author.bio or site.description) -%}
         <p class="bio">
           {{ site.author.bio | default: site.description }}
         </p>
