@@ -1,9 +1,11 @@
 <header class="site-header">
   <div class="profile">
     {%- if site.author.avatar -%}
-      <img src="{{ site.author.avatar | relative_url }}"
-           alt="{{ site.author.name }}"
-           class="avatar">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ site.author.avatar | relative_url }}"
+            alt="{{ site.author.name }}"
+            class="avatar">
+      </a>
     {%- endif -%}
     <div class="profile-info">
       <h1 class="site-title">
