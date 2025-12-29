@@ -1,24 +1,6 @@
 // Typography and colors inspired by Hey World's minimalist design
 
-// Light theme variables (default)
-$text-color-light: #1a1a1a;
-$text-secondary-light: #666;
-$text-tertiary-light: #999;
-$link-color-light: #0066cc;
-$link-hover-light: #004499;
-$border-color-light: #e5e5e5;
-$background-light: #ffffff;
-$code-bg-light: #f5f5f5;
-
-// Dark theme variables
-$text-color-dark: #e8e8e8;
-$text-secondary-dark: #a0a0a0;
-$text-tertiary-dark: #707070;
-$link-color-dark: #6ba3ff;
-$link-hover-dark: #8fb8ff;
-$border-color-dark: #2a2a2a;
-$background-dark: #0f0f0f;
-$code-bg-dark: #1a1a1a;
+@import 'variables';
 
 // Default to light theme
 $text-color: $text-color-light;
