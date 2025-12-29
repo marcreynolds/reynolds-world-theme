@@ -12,6 +12,7 @@ description: >
   and pages to help you visualize your content.
 
 theme: reynolds-world-theme
+google_analytics: G-SOME_TEST_TOKEN
 
 plugins:
   - jekyll-feed
