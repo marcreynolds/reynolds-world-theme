@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{%- include about.html -%}
 <div class="home">
   {%- if site.posts.size > 0 -%}
     <div class="post-list">
@@ -12,7 +13,7 @@ layout: default
                 datetime="{{ post.date | date_to_xmlschema }}">
             {{ post.date | date: date_format }}
           </time>
-          <h2 class="post-title">
+          <h2 class="post-title post-listing">
             <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>

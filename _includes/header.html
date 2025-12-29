@@ -13,27 +13,6 @@
           {{ site.author.name | default: site.title }}
         </a>
       </h1>
-      {%- if page.layout != "post" and (site.author.bio or site.description) -%}
-        <p class="bio">
-          {{ site.author.bio | default: site.description }}
-        </p>
-      {%- endif -%}
     </div>
   </div>
-
-  {%- if page.layout != "post" -%}
-  <div class="subscribe">
-    <a href="{{ '/feed.xml' | relative_url }}"
-       class="subscribe-link">
-      Subscribe via RSS
-    </a>
-    {%- if site.author.email -%}
-      <span class="separator">&middot;</span>
-      <a href="mailto:{{ site.author.email }}"
-         class="subscribe-link">
-        Email
-      </a>
-    {%- endif -%}
-  </div>
-  {%- endif -%}
 </header>

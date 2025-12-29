@@ -1,0 +1,16 @@
+<p class="bio">
+  {{ site.author.bio | default: site.description }}
+</p>
+<div class="subscribe">
+  <a href="{{ '/feed.xml' | relative_url }}"
+      class="subscribe-link">
+    Subscribe via RSS
+  </a>
+  {%- if site.author.email -%}
+    <span class="separator">&middot;</span>
+    <a href="mailto:{{ site.author.email }}"
+        class="subscribe-link">
+      Email
+    </a>
+  {%- endif -%}
+</div>
